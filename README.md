@@ -4,6 +4,13 @@ Author: Kiyoon Kim (yoonkr33@gmail.com, http://kiyoon.kim)
 
 Description: Message Queue based Interprocess Communication (IPC) between Python and C. There are sender and receiver code for each languages.
 
+
+## Dependencies
+
+- Python 2.x
+- sysv_ipc (python package)
+
+
 ## Usage
 
 Build C programs
