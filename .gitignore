@@ -1,3 +1,5 @@
 *.o
 receiver
 sender
+
+__pycache__/
