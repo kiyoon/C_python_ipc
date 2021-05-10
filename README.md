@@ -40,7 +40,7 @@ Watch what happens on the receiver!
 ## Example output
 ### sender.py
 ```
-$ ./sender.py
+$ python3 sender.py
 string sent: sample string
 two doubles sent: 1234.56789, 9876.12345
 numpy array sent: [[ 0  1  2  3  4  5  6  7]
@@ -53,8 +53,8 @@ one double and numpy array sent: 1234.56789, [[ 0  1  2  3  4  5  6  7]
 ```
 $ ./receiver
 *** New message received ***
-Raw data: 73 74 72 69 6E 67 20 66 72 6F 6D 20 43 00 00 00
-Interpreted as string:   string from C
+Raw data: 73 61 6D 70 6C 65 20 73 74 72 69 6E 67 00 00 00
+Interpreted as string:   sample string
 *** New message received ***
 Raw data: E7 C6 F4 84 45 4A 93 40 58 A8 35 CD 0F 4A C3 40
 Interpreted as two doubles: 1234.567890, 9876.123450
@@ -64,6 +64,7 @@ Interpreted as array: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 *** New message received ***
 Raw data: E7 C6 F4 84 45 4A 93 40 00 01 02 03 04 05 06 07
 Interpreted as one double and array: 1234.567890, 0 1 2 3 4 5 6 7
+
 ```
 
 ## References
