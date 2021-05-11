@@ -34,7 +34,7 @@ if __name__ == '__main__':
         # one double one numpy transmission
         bytearray1 = struct.pack("d", msg_double1)
         mq.send(bytearray1 + msg_npy_half.tobytes(order='C'), True, type=TYPE_DOUBLEANDNUMPY)
-        print(f"one double and numpy array sent: {msg_double1}, {msg_npy}")
+        print(f"one double and numpy array sent: {msg_double1}, {msg_npy_half}")
 
 
     except sysv_ipc.ExistentialError:

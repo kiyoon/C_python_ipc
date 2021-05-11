@@ -45,8 +45,8 @@ string sent: sample string
 two doubles sent: 1234.56789, 9876.12345
 numpy array sent: [[ 0  1  2  3  4  5  6  7]
  [ 8  9 10 11 12 13 14 15]]
-one double and numpy array sent: 1234.56789, [[ 0  1  2  3  4  5  6  7]
- [ 8  9 10 11 12 13 14 15]]
+one double and numpy array sent: 1234.56789, [[0 1 2 3]
+ [4 5 6 7]]
 ```
 
 ### receiver (C)
