@@ -1,8 +1,8 @@
 # C_python_ipc
 
-Author: Kiyoon Kim (yoonkr33@gmail.com, https://kiyoon.kim)  
+Author: Kiyoon Kim (https://kiyoon.kim)  
 
-Description: Message Queue based Interprocess Communication (IPC) between Python and C. There are sender and receiver code for each language.  
+Message Queue based Interprocess Communication (IPC) between Python and C. There are sender and receiver code for each language.  
 
 The senders will send:  
 - string
@@ -12,11 +12,10 @@ The senders will send:
 
 And the receivers receive the byte formatted data and unpack.
 
-
 ## Dependencies
 
 - Python >= 3.6
-- sysv_ipc (python package)
+- sysv_ipc (python package) - Only supports Unix (Linux and MacOS), not Windows.
 - numpy (python package)
 
 For Python 2 support, see the older version: [v0.1](https://github.com/kiyoon/C_python_ipc/tree/v0.1)
@@ -39,7 +38,7 @@ Watch what happens on the receiver!
 
 ## Example output
 ### sender.py
-```
+```console
 $ python3 sender.py
 string sent: sample string
 two doubles sent: 1234.56789, 9876.12345
@@ -50,7 +49,7 @@ one double and numpy array sent: 1234.56789, [[0 1 2 3]
 ```
 
 ### receiver (C)
-```
+```console
 $ ./receiver
 *** New message received ***
 Raw data: 73 61 6D 70 6C 65 20 73 74 72 69 6E 67 00 00 00
@@ -64,7 +63,6 @@ Interpreted as array: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 *** New message received ***
 Raw data: E7 C6 F4 84 45 4A 93 40 00 01 02 03 04 05 06 07
 Interpreted as one double and array: 1234.567890, 0 1 2 3 4 5 6 7
-
 ```
 
 ## References
